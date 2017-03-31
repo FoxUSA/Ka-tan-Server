@@ -6,11 +6,12 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
+  "author": "FoxUSA",
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.2",
     "node-uuid": "^1.4.8",
+    "random-js": "^1.0.8",
     "socket.io": "^1.7.3",
     "uuid": "^3.0.1"
   }
