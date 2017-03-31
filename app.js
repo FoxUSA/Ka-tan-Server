@@ -19,6 +19,8 @@ var createRobber = function(pieces,tile){
 //Setup board
     var tiles = [];
     var pieces={};
+    var docks = [];
+    boardService.creatDocks(docks);
     boardService.createBoard(tiles);
     boardService.createPiece(pieces, 800,240,100,0,0);
     boardService.createPiece(pieces, 800,1100,100,0,1);
@@ -47,7 +49,8 @@ var createRobber = function(pieces,tile){
                 //Send full board info
                 socket.emit("initBoardUpdate", {
                     tiles:tiles,
-                    pieces:pieces
+                    pieces:pieces,
+                    docks:docks
                 });
             });
 
