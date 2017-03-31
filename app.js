@@ -61,7 +61,6 @@ var createRobber = function(pieces,tile){
 
         //Player piece is dragged
             socket.on("pieceUpdate", function(data){
-                console.log("pieceUpdate received");
                 pieces[data.id].x=data.x;
                 pieces[data.id].y=data.y;
                 pieces[data.id].angle=data.angle;
