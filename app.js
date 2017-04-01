@@ -23,9 +23,9 @@ var createRobber = function(pieces,tile){
     boardService.creatDocks(docks);
     boardService.createBoard(tiles);
     boardService.createPiece(pieces, 800,240,100,0,0);
-    boardService.createPiece(pieces, 800,1100,100,0,1);
+    boardService.createPiece(pieces, 800,1150,100,0,1);
     boardService.createPiece(pieces, 400,600,0,100,2);
-    boardService.createPiece(pieces, 1300,600,0,100,3);
+    boardService.createPiece(pieces, 1350,600,0,100,3);
 
 
     tiles.filter(function(tile){
